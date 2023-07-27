@@ -1,0 +1,173 @@
+
+/* General Rules/Resets */
+:root {
+    font-size: 62.5%;
+}
+
+html {
+    box-sizing: border-box;
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #dddddd;
+}
+
+.shadow {
+    box-shadow: 0 0 12px 1px #000000aa;
+}
+
+/* Header Elements */
+#headerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 5rem;
+
+    background-color: #ffffff;
+
+    height: 12vh;
+}
+
+#headerText {
+    font-size: 4rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+#gameText {
+    font-size: 3rem;
+    max-height: 7.5rem;
+    max-width: 30ch;
+    overflow: hidden;
+    text-align: center;
+    flex: 2;
+}
+
+#startGame {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 1;
+}
+
+#playerToggle {
+    border: solid 3px #777;
+    border-radius: 1rem;
+
+    height: 6vh;
+    width: 8vw;
+
+    background-color: #fc8282;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+
+    padding: 1.3vh .5rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+
+#playerToggle:hover {
+    opacity: .8;
+}
+
+#playerToggle:active {
+    transform: scale(0.95);
+}
+
+#startButton {
+    font-size: 2.8rem;
+    font-weight: 500;
+
+    min-width: 12ch;
+    width: 10vw;
+    height: 8vh;
+
+    border: 3px solid #777;
+    border-radius: 2rem;
+    
+    background-color: #dddddd;
+}
+
+#startButton:hover {
+    opacity: .8;;
+}
+
+#startButton:active {
+    transform: scale(0.95);
+}
+
+/* Game Elements */
+#gameElement {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    width: 75vh;
+    height: 75vh;
+
+    padding: 3rem;
+    margin: 5vh auto;
+
+    border-radius: 2rem;
+
+    background-color: #ffffff;
+    opacity: 0.5;
+}
+
+.gameSquare {
+    border-style: solid;
+    border-width: 0;
+    padding: 5%;
+}
+
+.lineTop {
+    border-top-width: 5px;
+}
+
+.lineRight {
+    border-right-width: 5px;
+}
+
+.lineBot {
+    border-bottom-width: 5px;
+}
+
+.lineLeft {
+    border-left-width: 5px;
+}
+
+.moveImg {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    border-style: none;
+}
+
+.moveImg:hover {
+    background-color: #eee;
+    opacity: 1;
+}
+
+.moveImg:active {
+    background-color: #ccc;
+}
+
+.noMove {
+    opacity: 0;
+}
+
+.xMove {
+    content: url(assets/x.svg);
+}
+
+.oMove {
+    content: url(assets/o.svg);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div id="headerBar" class="shadow">
+        <h1 id="headerText">Tic-Tac-Toe</h1>
+        <p id="gameText">Click 'New Game' to start</p>
+        <div id="startGame">
+            <button id="playerToggle">One Player</button>
+            <button id="startButton">New Game</button>
+        </div>
+    </div>
+
+    <div id="gameElement" class="shadow">
+        <div class="gameSquare lineRight lineBot">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineRight lineLeft lineBot">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineLeft lineBot">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineRight lineTop lineBot">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineRight lineLeft lineTop lineBot">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineLeft lineTop lineBot">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineRight lineTop">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineRight lineLeft lineTop">
+            <img class="moveImg noMove">
+        </div>
+        <div class="gameSquare lineLeft lineTop">
+            <img class="moveImg noMove">
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
