@@ -5,6 +5,11 @@ This website allows you to play tic-tac-toe either against an automated computer
 ### Currently Known Bugs:
 - None at the moment  :)
 
+### Version Changes:
+##### First Update:
+- Fixed sizing issue with game type selector
+- Made game type selector disappear while game is active
+
 
 
 

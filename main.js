@@ -42,6 +42,7 @@ const gameState = (function() {
         inGame = true;
         updateDisplay("Player 1 make your move");
         gameElement.style.opacity = "1";
+        playerToggle.style.opacity = "0";
 
         for(let i = 0; i < gameBoard.length; i++) {
             gameBoard[i] = 0;
@@ -70,6 +71,7 @@ const gameState = (function() {
     function gameShutdown() {
         inGame = false;
         gameElement.style.opacity = "0.5";
+        playerToggle.style.opacity = "1";
 
         if(playerToggle.innerText == "One Player") {
             isSinglePlayer = true;

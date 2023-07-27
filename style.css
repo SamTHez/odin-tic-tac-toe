@@ -63,6 +63,7 @@ body {
 
     height: 6vh;
     width: 8vw;
+    min-width: 12ch;
 
     background-color: #fc8282;
     font-size: 2rem;
